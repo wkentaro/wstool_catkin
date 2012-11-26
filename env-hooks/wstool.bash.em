@@ -36,6 +36,8 @@
 _SPACES=(`echo $ROS_PACKAGE_PATH | tr ':' ' '`)
 export ROS_WORKSPACE=${_SPACES[0]}
 unset _SPACES
+@[else]@
+unset ROS_WORKSPACE
 @[end if]@
 
 # Programmable completion for the wstool command under bash. Source
